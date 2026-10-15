@@ -34,6 +34,38 @@ double arr_average(int* massive,std::size_t n){
     return summ/static_cast<double>(n);
 }
 
+int arr_count_positive(int* massive,std::size_t n){
+int s=0;
+    for (std::size_t i=0;i<n;++i){
+    if(massive[i]>0)++s;
+}
+return s;
+}
+
+int arr_count_negative(int*massive,std::size_t n){
+    int s=0;
+    for (std::size_t i=0;i<n;++i){
+    if(massive[i]<0)++s;
+}
+return s;
+}
+
+int arr_count_zero(int*massive,std::size_t n){
+    int s=0;
+    for (std::size_t i=0;i<n;++i){
+    if(massive[i]==0)++s;
+}
+return s;
+}
+
+int arr_product(int* massive,std::size_t n){
+    int s=1;
+    for(std::size_t i=0;i<n;++i)s*=massive[i];
+
+return s;
+}
+
+
 double arr_median(int* massive,std::size_t n){
 int massive2[n];   
     for(std::size_t i=0;i<n;++i){

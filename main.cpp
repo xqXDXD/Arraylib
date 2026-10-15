@@ -1,22 +1,25 @@
-//Вариант 10
+//Массив из варианта 10
 #include "arraylib.h"
 #include<iostream>
 
 int main(){
     
-    int distanced[] ={ 
+    int data[] ={ 
 12, 35, 48, 7, 64, 
 28, 51, 19, 42, 33 
-}; 
-int dist= arr_sum(distanced,(sizeof(distanced)/sizeof(distanced[0])));
-int mind=arr_min(distanced,(sizeof(distanced)/sizeof(distanced[0])));
-int maxd=arr_max(distanced,(sizeof(distanced)/sizeof(distanced[0])));
-double averd=arr_average(distanced,(sizeof(distanced)/sizeof(distanced[0])));
-double mediand=arr_median(distanced,(sizeof(distanced)/sizeof(distanced[0])));
-    std::cout<<"Общее расстояние: "<<dist<<'\n';
-    std::cout<<"Минимальное расстояние: "<<mind<<'\n';
-    std::cout<<"Максимальное расстояние: "<<maxd<<'\n';
-    std::cout<<"Среднее расстояние: "<<averd<<'\n';
-    std::cout<<"Медина расстояний: "<<mediand<<'\n';
+};
+std::size_t n= sizeof(data)/sizeof(data[0]);
+ 
+std::cout << "Сумма: " << arr_sum(data, n) << "\n";
+    std::cout << "Минимальное число: " << arr_min(data, n) << "\n";
+    std::cout << "Максимальное число: " << arr_max(data, n) << "\n";
+    std::cout << "Среднее число: " << arr_average(data, n) << "\n";
+    std::cout << "Количество положительных чисел:  " << arr_count_positive(data, n) << "\n";
+    std::cout << "Количество отрицательных чисел:  " << arr_count_negative(data, n) << "\n";
+    std::cout << "Количество нулей: " << arr_count_zero(data, n) << "\n";
+    std::cout << "Произведение: " << arr_product(data, n) << "\n";
+    std::cout << "Медиана: " << arr_median(data, n) << "\n";
+
     return 0;
 }
+    
