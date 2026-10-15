@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/xq/arraylib/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
