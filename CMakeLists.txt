@@ -8,6 +8,8 @@ target_include_directories(arraylib
 PUBLIC 
 ${CMAKE_CURRENT_SOURCE_DIR}/include 
 )
+add_executable(variant_10 examples/variant_10.cpp)
+target_link_libraries(variant_10 PRIVATE arraylib)
 target_compile_definitions(arraylib PRIVATE ARRAYLIB_BUILD) 
 if (MSVC) 
 target_compile_options(arraylib PRIVATE /W4) 
