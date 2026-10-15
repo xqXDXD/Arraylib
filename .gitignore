@@ -6,6 +6,14 @@ out/
 *.dll 
 *.lib 
 *.exe 
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+Makefile
+DartConfiguration.tcl
+app
 .vscode/ 
 .idea/ 
 compile_commands.json 
